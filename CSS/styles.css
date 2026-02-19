@@ -17,10 +17,15 @@ margin: 0 auto;
 
 .card {
 background: #ffffff;
+opacity: 1;
 padding: 20px;
 margin-bottom: 20px;
 border-radius: 8px;
 box-shadow: 0 2px 5px rgba(10,5,0,10);
+}
+
+img {
+    float: left;
 }
 
 h1 {
@@ -75,6 +80,7 @@ padding: 10px;
 border: 1px solid #ccc;
 border-radius: 4px;
 }
+
 button {
 padding: 10px;
 background-color: #593e69;
@@ -82,7 +88,17 @@ color: white;
 border: none;
 cursor: pointer;
 }
+
 button:hover {
 background-color: #51066e;
+}
+
+.dark-mode {
+    background-color:#8f6897;
+    color:rgb(146, 113, 143);
+}
+
+.hidden {
+    display:none;
 }
 

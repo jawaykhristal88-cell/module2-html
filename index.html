@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <button id="themeToggle"></button>
     <link rel="stylesheet" href="CSS/styles.css">
     <meta charset="UTF-8">
     <title>Personal Online CV</title>
@@ -10,29 +11,20 @@
 <main>
     <div class="container">
 
-<table width="900" align="center" border="1" cellpadding="20">
-    <tr>
-        <td>
-            <center>
-                <h1>Khristal Jaway</h1>
-                <p>IT Student | Web Systems and Technologies</p>
-            </center>
 <section class="card">
+    <h1>Khristal Jaway</h1>
+    <p align="center">IT Student | Web Systems and Technologies</p>
+</section>
 
+<section class="card">
             <h2>About Me</h2>
-            <table border="0" width="100%" cellpadding="5">
-                <tr>
-                    <td width="25%" align="center" valign="top">
-                        <img src="images/profile.jpg" alt="Profile photo" width="150" border="1">
-                    </td>
-                    <td width="75%" valign="top">
-                        <p>I am Khristal Jaway, a dedicated IT student specializing in Web Systems and Technologies. 
-                            I have a strong interest in digital design and front-end development, and I like turning ideas into clean and functional designs. 
-                            I am still learning backend development and improving my technical skills step by step.
-                        </p>
-                    </td>
-                </tr>
-            </table>           
+            <img src="images/profile.jpg" alt="Profile photo" width="150">
+            
+            <p>I am Khristal Jaway, a dedicated IT student specializing in Web Systems and Technologies. 
+             I have a strong interest in digital design and front-end development, and I like turning ideas into clean and functional designs. 
+             I am still learning backend development and improving my technical skills step by step.
+            </p>
+                            
             <p>
                 <strong>Email:</strong>
                 <a href="https://mail.google.com/mail/u/0/#inbox">jaway.khristal88@gmail.com</a><br>
@@ -42,9 +34,9 @@
             
 </section>
 
-        <section class="card">
+        <button id="toggleSkills">Show/Hide Skills</button> 
+        <section class="card" id="skillsSection">
             <h2>Skills</h2>
-
             <ul>
                 <li>Graphic Designing
                     <ul>
@@ -74,14 +66,11 @@
                     </ul>
                 </li>
             </ul>
-
-            
-
         </section>
+
 
         <section class="card"> 
             <h2>Education</h2>
-            <CENTER>
             <table border="1" width="90%" align="center" cellpadding="5" cellspacing="0">
             
                 </tr>
@@ -111,31 +100,22 @@
                     <td>Present</td>
                 </tr>
             </table>
-            </CENTER>
-        
         </section>
 
         <section class="card"> 
             <h2>Contact Me</h2>
-
             <form>
-                <input type="text" placeholder="Name"><br>
-                <input type="email" placeholder="Email"><br>
+                <input type="text" id="name" placeholder="Name"><br>
+                <input type="email" id="email" placeholder="Email"><br>
                 <textarea placeholder="Message"></textarea><br>
-                <button type="submit">Send</button>
+                <button type="submit" id="submitBtn">Send</button>
             </form>
-        </section>   
-            <hr>
+        </section>
+        
+        <p align="center">&copy; 2026 Khristal Jaway. All rights reserved.</p>
 
-            <center>
-                <p>&copy; 2026 Khristal Jaway. All rights reserved.</p>
-            </center>
-
-        </td>
-    </tr>
-</table>
 </div>
 </main>
-
+<script src="JS/script.js"></script>
 </body>
 </html>
