@@ -24,9 +24,7 @@ border-radius: 8px;
 box-shadow: 0 2px 5px rgba(10,5,0,10);
 }
 
-img {
-    float: left;
-}
+
 
 h1 {
 text-align: center;
@@ -98,7 +96,14 @@ background-color: #51066e;
     color:rgb(146, 113, 143);
 }
 
+.dark-mode .card {
+    background-color:#000000;
+    color:rgb(228, 223, 227);
+}
 .hidden {
     display:none;
 }
 
+.card img {
+    border-radius: 50%;
+}

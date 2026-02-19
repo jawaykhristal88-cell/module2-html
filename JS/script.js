@@ -1,10 +1,5 @@
 console.log("JS/script.js")
 
-const submitBtn = document.getElementById("submitBtn");
-submitBtn.addEventListener("click",function(event){
-event.preventDefault();
-alert("Thank you! Your message has been received.");
-});
 
 const themeToggle = document.getElementById("themeToggle");
 
@@ -21,6 +16,7 @@ toggleSkills.addEventListener("click",function(){
 
 submitBtn.addEventListener("click",function(event){
     event.preventDefault();
+
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     if (name===""||email===""){
@@ -28,4 +24,4 @@ submitBtn.addEventListener("click",function(event){
     } else{
     alert("Form submitted successfully!");
     }
-    });
+});
