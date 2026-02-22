@@ -8,12 +8,12 @@ themeToggle.addEventListener("click", function () {
 
     if (document.body.classList.contains("dark-mode")) {
         themeToggle.textContent = "Light Mode";
-        themeToggle.style.backgroundColor = "#ffb8d6";
-        themeToggle.style.color = "#000000";
+        themeToggle.style.backgroundColor = "#e8d0b6b7";
+        themeToggle.style.color = "#4b3621";
     } else {
         themeToggle.textContent = "Dark Mode";
-        themeToggle.style.backgroundColor = "#333333";
-        themeToggle.style.color = "#ffffff";
+        themeToggle.style.backgroundColor = "#4b3621";
+        themeToggle.style.color = "#e8d0b6b7";
     }
 });
 
@@ -24,6 +24,7 @@ const skillsSection = document.getElementById("skillsSection");
 toggleSkills.addEventListener("click",function(){
     skillsSection.classList.toggle("hidden");
 });
+
 
 submitBtn.addEventListener("click",function(event){
     event.preventDefault();
