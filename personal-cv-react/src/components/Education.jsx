@@ -1,34 +1,25 @@
-function Education() {
+function Education({education}) {
     return (
         
 <section className="card"> 
      <h2>Education</h2>
-        <table border="1" width="90%" align="center" cellpadding="5" cellspacing="0">
+        <table border="1" width="90%" align="center" cellPadding="5" cellSpacing="0">
+           <thead>
             <tr>
-                <th>PROGRAM</th>
-                <th>INSTITUTION</th>
-                <th>YEAR GRADUATED</th>
+                <th>Year</th>
+                <th>Program</th>
+                <th>Institution</th>
             </tr>
-            <tr>
-                <td>Elementary School</td>
-                <td>PNROA Elementary School</td>
-                <td>2018</td>
+            </thead>
+            <tbody>
+            {education.map((item, index) => (
+            <tr key={index}>
+            <td>{item.year}</td>
+            <td>{item.program}</td>
+            <td>{item.school}</td>
             </tr>
-            <tr>
-                <td>High School</td>
-                <td>PNROA High School</td>
-                <td>2022</td>
-            </tr>
-            <tr>
-                <td>Senior High School</td>
-                <td>Liceo De Cagayan University</td>
-                <td>2024</td>
-            </tr>
-            <tr>
-                <td>College</td>
-                <td>USTP – CDO Campus</td>
-                <td>Present</td>
-            </tr>
+            ))}
+            </tbody>
         </table>
 </section>
 

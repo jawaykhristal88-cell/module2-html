@@ -9,6 +9,36 @@ import "./index.css";
 function App() {
   const [showSkills, setShowSkills] = useState(true);
   const [darkMode, setDarkMode] = useState(false);
+  const skills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React"
+  ];
+
+  const education = [
+  {
+  year: "2018",
+  program: "Elementary School",
+  school: "PNROA Elementary School"
+  },
+  {
+  year: "2022",
+  program: "High School",
+  school: "PNROA High School"
+  }, 
+  {
+  year: "2024",
+  program: "Senior High School",
+  school: "Liceo De Cagayan University"
+  },
+  {
+  year: "Present",
+  program: "College",
+  school: "USTP – CDO Campus"
+  }
+
+];
 
   useEffect(() => {
     if (darkMode) {
@@ -31,8 +61,9 @@ function App() {
         <button onClick={() => setShowSkills(!showSkills)}>
           {showSkills ? "Hide Skills" : "Show Skills"}
           </button>
-        <Skills showSkills={showSkills}/>
-        <Education />
+        <Skills showSkills={showSkills} skills={skills}/>
+
+        <Education education={education}  />
         <Contact />
 
         <p align="center">

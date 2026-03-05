@@ -12,13 +12,12 @@ function Contact() {
       alert("Please fill in all required fields.");
       return;
     }
-
     alert("Form submitted successfully!");
-
     setName("");
     setEmail("");
     setMessage("");
   };
+  
 
   return (
     <section className="card">

@@ -1,7 +1,9 @@
+import Card from "./Card";
+
 function About() {
     return (
-        <section className="card">
-            <h2>About Me</h2>
+            <Card title="About Me">
+        
             <img src="./img/profile.jpg" alt="Profile" /><br />
             <p style={{ textAlign: "justify" }}>
                 I am Khristal Jaway, a dedicated IT student specializing in Web Systems and Technologies. 
@@ -19,7 +21,8 @@ function About() {
                     github.com
                 </a>
             </p>
-        </section>
+            </Card>
+
     );
 }
 
