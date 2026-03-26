@@ -8,16 +8,35 @@ function Contact() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    if (name === "" || email === "" || message === "") {
+    if (!name.trim() || !email.trim() || !message.trim()) {
       alert("Please fill in all required fields.");
       return;
     }
-    alert("Form submitted successfully!");
-    setName("");
-    setEmail("");
-    setMessage("");
+
+    fetch("http://localhost/cv-api/process.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        message: message,
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        alert(data.message);
+        
+        setName("");
+        setEmail("");
+        setMessage("");
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("Something went wrong");
+      });
   };
-  
 
   return (
     <section className="card">
